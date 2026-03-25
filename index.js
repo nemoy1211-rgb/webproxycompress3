@@ -23,7 +23,7 @@ app.get('/:protocol//:url(*)', async (req, res) => {
         );
 
         if (!isAllowed) {
-            return res.status(403).send('Forbidden: Domain not whitelisted');
+            return res.status(403).send('F');
         }
 
         // 2. Запрос к источнику
